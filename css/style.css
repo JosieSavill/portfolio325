@@ -7,6 +7,8 @@ body {
     
 }
 
+
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -27,11 +29,44 @@ body {
 
 
 .carousel{
-    border-radius: 30px;
-    overflow: hidden;
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative; /* Keeps captions contained */
 }
 
 #envelope{
     padding: 5px;
 }
 
+.carousel-caption {
+	display: block !important; /* Overrides any Bootstrap hiding */
+  }
+  
+  @media (max-width: 767.98px) { /* Mobile widths (below md breakpoint) */
+	.carousel-caption h5 {
+	  font-size: 1rem; /* Smaller title */
+	}
+	.carousel-caption p {
+	  font-size: 0.875rem; /* Smaller text */
+	}
+  }
+
+/* Adjust captions at 540px and below */
+@media (max-width: 540px) {
+	.carousel-caption {
+		bottom: 0.5rem; /* Moves up slightly to stay in view */
+		width: 95%; /* Slightly wider for small screens */
+		text-align: center; /* Reinforces centering */
+		left: 50%; /* Keeps it centered */
+		transform: translateX(-50%); /* Maintains true center */
+	  }
+	  .carousel-caption h5 {
+		font-size: 0.85rem; /* Smaller title */
+		margin-bottom: 0.25rem; /* Tightens spacing */
+	  }
+	  .carousel-caption p {
+		font-size: 0.7rem; /* Smaller text */
+		margin-bottom: 0; /* Removes extra space */
+	  }
+
+}
