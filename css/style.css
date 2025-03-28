@@ -25,11 +25,8 @@ body {
     }
 }
 
-.profile-img{
-    border-radius: 17%;
-}
 
-#carouselExampleCaptions{
+.carousel{
     border-radius: 30px;
     overflow: hidden;
 }
