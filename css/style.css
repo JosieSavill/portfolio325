@@ -38,12 +38,15 @@ body {
 	padding: 5px;
   }
   
-  
+  .carousel-caption {
+	display: block !important; /* Overrides any Bootstrap hiding */
+	
+  }
   
   .carousel-caption h1,
   .carousel-caption p {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-	padding: 0.8rem; /* Consistent spacing */
+	
   }
   
   .carousel-control-prev-icon,
