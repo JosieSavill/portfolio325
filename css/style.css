@@ -45,9 +45,12 @@ body {
 
   .carousel-caption h1 {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-	position: sticky;
+	
   }
   
+  .github {
+	margin: 8px;
+  }
   
   .carousel-caption p {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
@@ -71,6 +74,10 @@ body {
 		width: 100%;
 		
 	}
+
+	.github {
+		margin: 2px;
+	  }
 
 	.carousel-caption {
 	  width: 100%; /* Full width of parent */
