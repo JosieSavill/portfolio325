@@ -21,8 +21,15 @@ body {
 	}
 }
 
-@media (min-width: 1400px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+@media (max-width: 400px) {
+  body {
+    background-size: 800% 800%; /* adjust the value as needed */
+	height: auto;
+  }
+}
+
+@media (min-width: 140px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .footer {
         max-width: 1670px;
     }
 }
