@@ -48,3 +48,33 @@ codepen.io/P1N20/pen/pyBNzX
 	  }
 
 }
+
+
+1. read the data when you clicked 
+[ date  ]
+[ title]
+[ textarea]
+docuemnt.query("#datepcker)
+
+2. save it to localstorage
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+localStorage.setItem("myDAta", [{
+	date: 123123
+	title: "myname"
+
+
+}]);
+
+
+
+
+
+3. read read from local storage
+4. display on the screen
+5. add delete button
+6. save it to localstorage with deleted data
+6. read the data again
+7. display
+
+use google doc to save your resume and you canl ink to the google doc for download/view
